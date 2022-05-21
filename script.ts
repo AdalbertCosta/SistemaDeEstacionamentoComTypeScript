@@ -18,7 +18,7 @@ interface Veiculo {
     }
 
     function adicionar(veiculo: Veiculo, salva?: boolean) {
-      const row = document.createElement('tr');
+      const row = document.createElement("tr");
 
       row.innerHTML = `
         
@@ -28,7 +28,7 @@ interface Veiculo {
         <td>
         <button class="delete" data-placa="${veiculo.placa}">X</button>
         </td>
-        `
+        `;
 
       $("#patio")?.appendChild(row);
 
@@ -36,8 +36,6 @@ interface Veiculo {
     }
 
     function remover() {}
-
-    
 
     function render() {
       $("#patio")!.innerHTML = "";
@@ -55,12 +53,12 @@ interface Veiculo {
     patio().render();
 
 
-  $('#cadastrar')?.addEventListener('click', () => {
+  $('#cadastrar')?.addEventListener("click", () => {
     const nome = $('#nome')?.value;
     const placa = $('#placa')?.value;
 
     if (!nome || !placa) {
-      alert('Os campos nome e placa são obirgatórios')
+      alert("Os campos nome e placa são obirgatórios")
       return
     }
 

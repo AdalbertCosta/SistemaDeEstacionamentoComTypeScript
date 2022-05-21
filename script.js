@@ -12,7 +12,7 @@
         }
         function adicionar(veiculo, salva) {
             var _a;
-            const row = document.createElement('tr');
+            const row = document.createElement("tr");
             row.innerHTML = `
         
         <td>${veiculo.entrada}</td>
@@ -37,12 +37,12 @@
         return { ler, adicionar, remover, salvar, render };
     }
     patio().render();
-    (_a = $('#cadastrar')) === null || _a === void 0 ? void 0 : _a.addEventListener('click', () => {
+    (_a = $('#cadastrar')) === null || _a === void 0 ? void 0 : _a.addEventListener("click", () => {
         var _a, _b;
         const nome = (_a = $('#nome')) === null || _a === void 0 ? void 0 : _a.value;
         const placa = (_b = $('#placa')) === null || _b === void 0 ? void 0 : _b.value;
         if (!nome || !placa) {
-            alert('Os campos nome e placa são obirgatórios');
+            alert("Os campos nome e placa são obirgatórios");
             return;
         }
         patio().adicionar({ nome, placa, entrada: new Date() }, true);
