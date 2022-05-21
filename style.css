@@ -1,0 +1,45 @@
+
+.flex-container{
+  display: flex;
+  text-align:center;
+  flex-direction:column;
+  margin: 0;
+}
+
+.img{
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  
+}
+
+.titulo {
+  color: grey;
+  text-transform: uppercase;
+  text-align: flex-end;
+  margin: 0;
+}
+
+.campo {
+
+  margin: 0 2rem  auto;
+  display: grid;
+  text-align: center;
+  grid-template-columns: 2fr 2fr 1fr;
+  padding: 5rem;
+  
+}
+
+.campo input {
+  
+  align-items: center;
+  color: red;
+}
+
+
+.table {
+  margin: 0;
+  display: grid;
+  color: blue;
+}
